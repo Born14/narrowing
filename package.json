@@ -1,0 +1,42 @@
+{
+  "name": "@sovereign-labs/narrowing",
+  "version": "0.2.0",
+  "description": "Constraint-learning runtime for iterative agent loops. Agents that structurally learn what NOT to try again.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "bun": "./src/index.ts", "import": "./dist/index.js", "types": "./dist/index.d.ts" },
+    "./types": { "bun": "./src/types.ts", "import": "./dist/types.js", "types": "./dist/types.d.ts" },
+    "./adapters/ml-training": { "bun": "./src/adapters/ml-training.ts", "import": "./dist/adapters/ml-training.js", "types": "./dist/adapters/ml-training.d.ts" },
+    "./adapters/tool-call": { "bun": "./src/adapters/tool-call.ts", "import": "./dist/adapters/tool-call.js", "types": "./dist/adapters/tool-call.d.ts" }
+  },
+  "scripts": {
+    "test": "bun test tests/",
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "files": ["dist/", "src/", "README.md"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Born14/narrowing"
+  },
+  "keywords": [
+    "ai-agents",
+    "constraint-learning",
+    "narrowing",
+    "convergence",
+    "search-pruning",
+    "execution-conditioned",
+    "agent-loop",
+    "ml-training",
+    "tool-call",
+    "agent-reliability",
+    "failure-memory"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.4.0"
+  }
+}
