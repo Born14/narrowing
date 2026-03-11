@@ -243,7 +243,7 @@ NarrowingLoop.recordOutcome()
 
 ## Research
 
-For the full empirical evaluation — GPU benchmarks against Gemini 2.5 Flash, honest assessment of where narrowing helps and where it doesn't, and related work analysis — see the [research paper](../../docs/narrowing/paper.md).
+For the full empirical evaluation — GPU benchmarks against Gemini 2.5 Flash, honest assessment of where narrowing helps and where it doesn't, and related work analysis — see the [research paper](docs/paper.md).
 
 Key findings: frontier LLMs self-correct on simple failure boundaries within 1-2 trials (marginal within-session value), but every new session rediscovers the same failures from scratch (clear cross-session value). Narrowing's value scales with horizon length, failure complexity, and session count.
 
